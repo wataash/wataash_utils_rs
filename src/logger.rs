@@ -29,6 +29,8 @@ pub enum _LogLevel {
     Debug,
 }
 
+// TODO: set output stream
+
 #[doc(hidden)]
 pub fn _log(level: _LogLevel, file: &str, line: u32, args: std::fmt::Arguments) {
     match level {

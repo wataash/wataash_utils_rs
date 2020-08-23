@@ -7,9 +7,21 @@
 #[doc(hidden)] // XXX: appears CLion's completion -- this doesn't make sense?
 pub mod logger;
 
-pub fn hello() {
-    println!("hello");
+// -------------------------------------------------------------------------------------------------
+// misc
+
+pub fn home_dir() -> String {
+    // https://stackoverflow.com/q/37388107/4085441
+    let home = dirs::home_dir()
+        .unwrap()
+        .into_os_string()
+        .into_string()
+        .unwrap();
+    return home;
 }
+
+// -------------------------------------------------------------------------------------------------
+// test
 
 #[cfg(test)]
 mod tests {

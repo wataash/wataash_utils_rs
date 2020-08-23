@@ -1,5 +1,5 @@
 # wataash_utils
 
-https://docs.rs/wataash_utils/
+https://crates.io/crates/wataash_utils/
 
 wataash's personal utilities.
